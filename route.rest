@@ -1,0 +1,28 @@
+GET http://localhost:1854/subscribers
+
+###
+GET http://localhost:1854/subscribers/10
+
+###
+POST http://localhost:1854/subscribers
+Content-Type: application/json
+
+{
+    "name" : "Temi",
+     "subscribedToChannel": "Temibillions"
+    }
+
+###
+GET http://localhost:1854/subscribers/63cfc2ecee27306fe609783f
+
+### 
+PATCH http://localhost:1854/subscribers/63cfc2ecee27306fe609783f
+Content-Type: application/json
+
+{
+    "name": "Raj Singer",
+    "subscribedToChannel": "code with vscode1"
+}
+
+###
+DELETE http://localhost:1854/subscribers/63cfc2ecee27306fe609783f
